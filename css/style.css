@@ -1,48 +1,297 @@
-.btn:focus,
-.btn:hover {
-  background-color: yellow;
-}
-.btn {
-  position: relative;
-  height: 110px;
-  width: 180px;
-  margin-top: 50px;
-  margin-left: 50px;
-  overflow: hidden;
-  transition: transform 250ms cubic-bezier(0.4 0, 0.2, 1);
-}
-.btn:hover::after {
-  transform: translateY(-75px);
-}
-
-.btn::after {
-  content: "";
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-color: blue;
-  margin-left: 10px;
-}
-.btn:hover::before {
-  top: 41px;
-  right: 31px;
-  transition: transform 250ms cubic-bezier(0.4 0, 0.2, 1);
-}
-
-.btn::before {
-  top: 110px;
-  right: 31px;
+.slick-arrow {
+  background-color: white;
+  border: none;
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+}
+.slick-prev {
+  left: -45px;
+}
+.slick-next {
+  right: -10px;
+}
 
-  content: "";
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-color: rgb(9, 206, 108);
+.container {
+  padding: 0px 15px;
+  margin: 0 auto;
 }
-.form-input:in-range {
-  background-color: blue;
+
+section .review {
+  width: 100%;
+
+  background-color: $dark-theme-text-color;
+  z-index: 100;
+  padding: 30px 0;
 }
-.form-input:out-of-range {
-  background-color: red;
+
+/*
+.review {
+  width: 1258px;
+  height: 571px;
+  margin: 0 auto;
+}
+*/
+.review__alumni {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 130%;
+  /* or 26px */
+
+  letter-spacing: 0.03em;
+
+  color: #111518;
+}
+
+.review__container {
+  background: $dark-theme-text-color;
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+}
+
+.review__all {
+  margin: 0 auto;
+}
+.review__main {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+
+  letter-spacing: 0.08em;
+
+  color: #ff6b09;
+}
+
+.review__description {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+
+  letter-spacing: 0.08em;
+
+  color: #b9b9b9;
+}
+.review__text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+
+  color: #3d3d3d;
+}
+
+.review__img-list {
+  display: flex;
+  margin-top: 20px;
+  padding-left: 0px;
+}
+
+.review__img-item:not(:last-child) {
+  margin-right: 25px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .review__main,
+  .review__text,
+  .review__alumni,
+  .review__description {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .review__text {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .review__image {
+    margin: 0 auto;
+    margin-bottom: 70px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .review .container {
+    width: 320px;
+    height: 682px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .container {
+    padding-left: 20px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .review__all {
+    width: 280px;
+    height: 564px;
+    padding-top: 20px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .review__description {
+    width: 240px;
+    height: 60px;
+    margin-left: 20px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .review__img-item {
+    overflow: hidden;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .review__img-item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .review__img-item {
+    width: 54px;
+    height: 54px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1343px) {
+  .container {
+    margin-bottom: 100px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1343px) {
+  .review__container {
+    width: 688px;
+    height: 313px;
+
+    background: #ffffff;
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1343px) {
+  .review__alumni {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 130%;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    margin-bottom: 30px;
+    margin-top: 0px;
+    color: #111518;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1343px) {
+  .review__image {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 123px;
+    margin-left: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1343px) {
+  .review__all {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1343px) {
+  .review__all-general {
+    display: flex;
+    padding-top: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1343px) {
+  .review__main {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.08em;
+    margin-bottom: 20px;
+    padding-left: 46px;
+    color: #ff6b09;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1343px) {
+  .review__description {
+    padding-right: 40px;
+    padding-left: 46px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1343px) {
+  .review__text {
+    padding-right: 40px;
+    padding-left: 46px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1343px) {
+  .review__description {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1343px) {
+  .review__img-item {
+    width: 54px;
+    height: 54px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1343px) {
+  .review__img-list {
+    padding-left: 78px;
+    padding-right: 78px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1343px) {
+  .review__img-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .review__image {
+    margin: 0 auto;
+    margin-bottom: 70px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .review__all {
+    width: 1258px;
+    height: 571px;
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: 1344px) {
+  .review__img-item:not(:last-child) {
+    margin-right: 30px;
+  }
 }

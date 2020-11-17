@@ -4,95 +4,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
+  
   <body>
-    <!--header-->
-    <header>
-      <nav>
-        <a href="">WebStudio</a>
-        <ul>
-          <li>
-            <a href="">Студия</a>
-          </li>
-          <li>
-            <a href="">Портфолио</a>
-          </li>
-          <li>
-            <a href="">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <ul>
-        <li>
-          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-        <li>
-          <a href="tel:+380961111111">+380961111111</a>
-        </li>
-      </ul>
-    </header>
-
-    <!--MAIN-->
-
-    <section>
-      <h1>ЕФЕКТИВНЫЕ РЕШЕНИЕ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-      <button>Заказать услугу</button>
-    </section>
-    <section>
-      <h2 hidden>Преимущества</h2>
-      <ul>
-        <li>
-          <h3>Внимание к деталям</h3>
-          <p>
-            Идейные соображения, а также начало повседневной работы по
-            формированию позиции.
-          </p>
-        </li>
-        <li>
-          <h3>Пунктуальность</h3>
-          <p>
-            Задача организации, в особенности же рамки и место обучения кадров
-            влечет за собой.
-          </p>
-        </li>
-        <li>
-          <h3>Планирование</h3>
-          <p>
-            Равным образом консультация с широким активом в значительной степени
-            обуславливает.
-          </p>
-        </li>
-        <li>
-          <h3>Современные технологии</h3>
-          <p>
-            Значимость этих проблем настолько очевидна, что реализация плановых
-            заданий.
-          </p>
-        </li>
-      </ul>
-    </section>
-    <section>
-      <h2>Чем мы занимаемся</h2>
-      <img src="./images/o-nas/box-1.jpg" alt="ноутбук" />
-      <img src="./images/o-nas/img.jpg" alt="телефон" />
-      <img src="./images/o-nas/box-3.jpg" alt="клавиатура" />
-    </section>
-    <section>
-      <h2>Наша команда</h2>
-      <ul>
-        <li>
-          <img src="./images/komanda/img-1.jpg" alt="" />
-        </li>
-        <li>
-          <img src="./images/komanda/img-2.jpg" alt="" />
-        </li>
-        <li>
-          <img src="./images/komanda/img-3.jpg" alt="" />
-        </li>
-        <li>
-          <img src="./images/komanda/img.jpg" alt="" />
-        </li>
-      </ul>
-    </section>
+    <section class="review">
+      <div class="container">
+          <h3 class="review__alumni">Отзывы выпускников</h3>
+          <div class="review__container">
+              <div class="review__all">
+                  <div class="review__all-general">
+                      <img class="review__image" src="./images/main.jpg" width="90" height="90" />
+                      <div class="review__all-text">
+                          <h4 class="review__main">Тоня Кучеровская</h4>
+                          <p class="review__description">Выпуск 2015-го года, Національний університет біоресурсів
+                              і природокористування України</p>
+                          <p class="review__text">За короткий час занять з Оленою я опанувала граматику і поповнила свій
+                              зовсім
+                              пустий
+                              словниковий запас. З першого ж
+                              заняття я зрозуміла, що знаходжуся у своїй тарілці. Ми з Оленою стали друзями, тому що її
+                              справді
+                              хвилювала моя
+                              успішність. Вона стала для мене авторитетом, проте я не тремтіла на уроках, маючи страх
+                              зробити
+                              найменшу
+                              помилку. Зараз
+                              я можу похизуватись тим, що я студен ... Читать дальше</p>
+                      </div>
+                  </div>
+                  <ul class="review__img-list photo__slider">
+                    <li><img class="review__img-item" src="./images/photo1.jpg" width="54" height="54" /></li>
+                    <li><img class="review__img-item" src="./images/photo2.jpg" width="54" height="54" /></li>
+                    <li><img class="review__img-item" src="./images/photo3.jpg" width="54" height="54" /></li>
+                    <li><img class="review__img-item" src="./images/photo4.jpg" width="54" height="54" /></li>
+                    <li><img class="review__img-item" src="./images/photo5.jpg" width="54" height="54" /></li>
+                    <li><img class="review__img-item" src="./images/photo6.jpg" width="54" height="54" /></li>
+                    <li><img class="review__img-item" src="./images/photo7.jpg" width="54" height="54" /></li>
+                      
+                      
+                      
+                      
+                  
+                  </ul>
+  
+              </div>
+          </div>
+  </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
